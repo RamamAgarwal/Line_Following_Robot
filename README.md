@@ -3,13 +3,13 @@ This is a project of line-following robot having two motors and two wheels made 
 
 This code implements a line follower robot using an ESP32 microcontroller, two infrared sensors, and a dual motor driver. The robot is designed to follow a black line on a light surface and navigate through various path scenarios, including straight lines, curves, and acute angles.
 
-Key Components:
+## Key Components:
 
 ESP32 microcontroller
 Two IR sensors
 Dual motor driver (controlling left and right motors)
 
-Functionality:
+## Functionality:
 
 Straight Line: When both sensors detect a light surface (no black line), the robot moves forward.
 Gentle Curves:
@@ -17,7 +17,7 @@ If the left sensor detects the line (black), the robot turns right.
 If the right sensor detects the line (black), the robot turns left.
 Acute Angles: When both sensors detect black (at an acute angle junction), the robot continues its last action (forward, left turn, or right turn) to navigate through the angle without haphazard.
 
-How it works:
+## How it works:
 
 The code reads the state of both IR sensors instantaneously.
 Based on the sensor readings, it decides the appropriate action (move forward, turn left, or turn right).
